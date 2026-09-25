@@ -5,7 +5,6 @@ from parked_car import ParkedCar
 
 
 class TestParkedCarConstruction(unittest.TestCase):
-    """Valid construction and property access."""
 
     def test_valid_construction(self):
         # Arrange / Act
@@ -33,7 +32,6 @@ class TestParkedCarReassignment(unittest.TestCase):
 
 
 class TestParkedCarInvalidStrings(unittest.TestCase):
-    """Empty or incorrect string values."""
 
     def test_empty_make_raises_value_error(self):
         with self.assertRaises(ValueError):
@@ -53,7 +51,6 @@ class TestParkedCarInvalidStrings(unittest.TestCase):
 
 
 class TestParkedCarMinutesParked(unittest.TestCase):
-    """Zero, positive, negative, and noninteger minutes parked."""
 
     def test_zero_minutes_parked_is_valid(self):
         car = ParkedCar("Honda", "Civic", "Blue", "ABC123", 0)

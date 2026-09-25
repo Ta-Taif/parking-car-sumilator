@@ -1,4 +1,3 @@
-"""Unit tests for PoliceOfficer."""
 
 import unittest
 from parked_car import ParkedCar
@@ -8,7 +7,6 @@ from police_officer import PoliceOfficer
 
 
 class TestPoliceOfficerInspection(unittest.TestCase):
-    """Core inspection behavior: no violation vs. violation."""
 
     def setUp(self):
         self.officer = PoliceOfficer("J. Smith", "4471")
@@ -34,7 +32,6 @@ class TestPoliceOfficerInspection(unittest.TestCase):
 
 
 class TestPoliceOfficerIllegalMinutes(unittest.TestCase):
-    """Illegal minutes are calculated correctly."""
 
     def test_illegal_minutes_calculated_correctly(self):
         officer = PoliceOfficer("J. Smith", "4471")
@@ -45,7 +42,6 @@ class TestPoliceOfficerIllegalMinutes(unittest.TestCase):
 
 
 class TestPoliceOfficerTicketInfo(unittest.TestCase):
-    """Returned ticket contains the expected car and officer info."""
 
     def test_ticket_contains_expected_info(self):
         officer = PoliceOfficer("J. Smith", "4471")
@@ -60,7 +56,6 @@ class TestPoliceOfficerTicketInfo(unittest.TestCase):
 
 
 class TestPoliceOfficerConstruction(unittest.TestCase):
-    """Valid construction and invalid name/badge values."""
 
     def test_valid_construction(self):
         officer = PoliceOfficer("J. Smith", "4471")

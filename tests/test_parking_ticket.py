@@ -7,7 +7,6 @@ from parking_ticket import ParkingTicket
 
 
 class TestParkingTicketInfo(unittest.TestCase):
-    """Correct car and officer information."""
 
     def setUp(self):
         self.car = ParkedCar("Honda", "Civic", "Blue", "ABC123", 90)
@@ -29,7 +28,6 @@ class TestParkingTicketInfo(unittest.TestCase):
 
 
 class TestParkingTicketFineBoundaries(unittest.TestCase):
-    """Fine boundaries at 1, 60, 61, 120, and 121 illegal minutes."""
 
     def setUp(self):
         self.car = ParkedCar("Honda", "Civic", "Blue", "ABC123", 90)
@@ -57,7 +55,6 @@ class TestParkingTicketFineBoundaries(unittest.TestCase):
 
 
 class TestParkingTicketReport(unittest.TestCase):
-    """Readable report contains required information."""
 
     def test_report_contains_required_info(self):
         car = ParkedCar("Honda", "Civic", "Blue", "ABC123", 90)
@@ -76,7 +73,6 @@ class TestParkingTicketReport(unittest.TestCase):
 
 
 class TestParkingTicketInvalidIllegalMinutes(unittest.TestCase):
-    """Invalid illegal-minute values are rejected."""
 
     def setUp(self):
         self.car = ParkedCar("Honda", "Civic", "Blue", "ABC123", 90)

@@ -1,11 +1,9 @@
-"""Unit tests for ParkingMeter."""
 
 import unittest
 from parking_meter import ParkingMeter
 
 
 class TestParkingMeterConstruction(unittest.TestCase):
-    """Valid construction and property access."""
 
     def test_valid_construction(self):
         meter = ParkingMeter(60)
@@ -13,7 +11,6 @@ class TestParkingMeterConstruction(unittest.TestCase):
 
 
 class TestParkingMeterMinutesPurchased(unittest.TestCase):
-    """Zero and positive purchased minutes; negative and noninteger."""
 
     def test_zero_minutes_purchased_is_valid(self):
         meter = ParkingMeter(0)
@@ -37,7 +34,6 @@ class TestParkingMeterMinutesPurchased(unittest.TestCase):
 
 
 class TestParkingMeterReassignment(unittest.TestCase):
-    """Valid property reassignment."""
 
     def test_reassign_minutes_purchased(self):
         meter = ParkingMeter(60)
